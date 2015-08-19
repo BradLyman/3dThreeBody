@@ -56,9 +56,9 @@ module.exports.mag = function(vec) {
  **/
 module.exports.scale = function(scale, vec) {
   return [
-    scale * a[0],
-    scale * a[1],
-    scale * a[2]
+    scale * vec[0],
+    scale * vec[1],
+    scale * vec[2]
   ];
 };
 

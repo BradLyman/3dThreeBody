@@ -13,7 +13,7 @@ var vec3 = require('./vec3.js');
  * @param {Vec3} force - A vector representing the net force
  * @param {Number} stepSize - A number representing the temporal step size.
  **/
-var eulerSolver = function(body, force, stepSize) {
+module.exports.eulerSolver = function(body, force, stepSize) {
   var dv = vec3.scale(1.0/body.getMass(), force);
   var dp = body.velocity;
 

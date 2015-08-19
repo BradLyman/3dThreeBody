@@ -1,5 +1,11 @@
 (function() {
-  var THREE = require('three');
+  var graphics = require('./graphics/main.js');
 
-  console.log('aoeu');
+  var update = function() {
+    graphics.render();
+
+    requestAnimationFrame(update);
+  };
+
+  update();
 }());
