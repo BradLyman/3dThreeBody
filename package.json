@@ -1,0 +1,32 @@
+{
+  "name": "3dthreebody",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradLyman/3dThreeBody.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BradLyman/3dThreeBody/issues"
+  },
+  "homepage": "https://github.com/BradLyman/3dThreeBody#readme",
+  "dependencies": {
+    "three": "^0.71.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
+    "html-webpack-plugin": "^1.6.1",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
